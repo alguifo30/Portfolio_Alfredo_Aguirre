@@ -244,7 +244,6 @@ html.js-anim .reveal{opacity:0;transform:translateY(40px)}.reveal{opacity:1;tran
 <section class="hero" id="top">
   <div class="hero-grid"></div><div class="hero-glow"></div><div class="hero-glow2"></div>
   <div class="hero-content">
-    <div class="hero-badge" id="heroBadge"><div class="ping"></div><span>DISPONIBLE PARA NUEVOS PROYECTOS</span></div>
     <div class="hero-kicker" id="heroKicker">Portfolio de <span class="brand">F<span class="dot">.</span>RED</span></div>
     <h1 id="heroTitle"><span class="ln-mask"><span class="ln">ALFREDO</span></span><span class="ln-mask"><span class="ln">AGUIRRE</span></span></h1>
     <div class="hero-name" id="heroName">AI Product Specialist · Design Thinker · Lima, Perú</div>
@@ -546,8 +545,7 @@ function intro(){
     return;
   }
   const tl=gsap.timeline({delay:.25});
-  tl.from('#heroBadge',{y:20,opacity:0,duration:.6,ease:'power3.out'})
-    .from('#heroKicker',{y:20,opacity:0,duration:.5,ease:'power3.out'},'-=.3')
+  tl.from('#heroKicker',{y:20,opacity:0,duration:.5,ease:'power3.out'})
     .from('.hero h1 .ln',{yPercent:115,duration:1,stagger:.13,ease:'power4.out'},'-=.2')
     .from('#heroName',{y:20,opacity:0,duration:.6,ease:'power3.out'},'-=.4')
     .from('#heroWave',{opacity:0,duration:.6},'-=.4')
